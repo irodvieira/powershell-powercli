@@ -1,0 +1,2 @@
+# Remove Remote Desktop Service Role from a server without rebooting.
+Get-WindowsFeature -Name Remote-Desktop-Services | Remove-WindowsFeature -IncludeManagementTools -Restart:$false -Remove:$true -confirm:$false
